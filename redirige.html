@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redireccionando...</title>
+  <script>
+    window.onload = function() {
+      const links = [
+        "https://docs.google.com/forms/d/e/1FAIpQLSeDY7as5I4PZUv3y6MHcRaa24uUin55ikuCGEyYKhLKjXNbZA/viewform",
+        "https://docs.google.com/forms/d/e/1FAIpQLSfPaJM1K_opODjUC_mbM9GEyfxLTlsR2eeIUkM3KPzGsWnrSg/viewform"
+      ];
+      const destino = links[Math.floor(Math.random() * links.length)];
+      window.location.href = destino;
+    };
+  </script>
+</head>
+<body>
+  <p>Redireccionando automáticamente... Si no ocurre, <a href="#" onclick="window.location.reload();">haz clic aquí</a>.</p>
+</body>
+</html>
